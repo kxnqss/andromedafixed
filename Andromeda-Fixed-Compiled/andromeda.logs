@@ -1,0 +1,22 @@
+=== Andromeda Injector === started 2026-06-13 16:05:32
+Platform: x64  LogLevel: INFO
+
+[16:05:32] [+] Running as Administrator.
+[16:05:32] [*] DLL: C:\Users\Anton\Desktop\Andromeda\Andromeda-Fixed-Compiled\Andromeda-DeadLock-Base.dll (6488 KB)
+[16:05:32] [~] Waiting for deadlock.exe...
+[16:05:33] [*] Launching Deadlock via Steam URL...
+[16:05:36] [~] Found deadlock.exe PID 20864 (uptime unknown, treating as fresh)
+[16:05:36] [+] Target PID: 20864
+[16:05:36] [~] Waiting 2 seconds for process initialisation...
+[16:05:38] [*] --- InjectLoadLibrary ---
+[16:05:38] [+]   OpenProcess succeeded.
+[16:05:38] [+]   VirtualAllocEx -> 0x1203004375040
+[16:05:38] [+]   WriteProcessMemory succeeded.
+[16:05:38] [+]   LoadLibraryA at 0x140718542293040
+[16:05:38] [+]   CreateRemoteThread succeeded.
+[16:05:38] [+]   Remote thread finished.
+[16:05:38] [+] Injection successful!
+[16:05:38] [+] Injection completed successfully.
+
+
+=== Andromeda Injector === ended 2026-06-13 16:05:38

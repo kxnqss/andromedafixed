@@ -1,0 +1,48 @@
+Andromeda-DeadLock — Changes / Fixes
+======================================
+
+1. OFFSET FIX — Schema property rename
+   File: DeadLock/SDK/Types/CEntityData.hpp
+   The game renamed the schema field "m_nUpgradeBits" → "m_nUpgradeInfo".
+   The runtime schema lookup was returning offset 0 for the old name,
+   breaking all ability upgrade bit reads. Updated all references.
+
+2. OFFSET COMMENTS — CCitadel_Ability_PrimaryWeapon shifted
+   File: DeadLock/SDK/Types/CEntityData.hpp
+   C_CitadelBaseAbility grew by 0xC0 bytes. Offset comments updated:
+     m_flLastReloadStartTime     0x1118 → 0x11D8
+     m_flNextPrimaryAttack       0x111C → 0x11DC
+     m_bInReload                 0x1264 → 0x132C
+     m_reloadQueuedStartTime     0x1268 → 0x1330
+     m_flReloadAvailableTime     0x126C → 0x1334
+     m_bCanActiveReload          0x1270 → 0x1338
+     m_flAttackDelayPauseTotalTime 0x1280 → 0x1348
+     m_flAttackDelayPauseEndTime   0x1284 → 0x134C
+
+3. PATTERN SCAN — CAbilityProperty::ComputeValue signature broke
+   File: DeadLock/SDK/CFunctionList.cpp
+   The 96-byte pattern for ComputeValue no longer matches after a game
+   update. Made both ComputeValue and ComputeScaled non-fatal so the
+   cheat loads without them. The rest of the cheat (ESP, aimbot, visuals)
+   works normally. GetPropertyValue() now null-checks the function pointers
+   instead of crashing.
+
+4. INJECTOR — Rewritten with debug logging
+   File: Injector/main.cpp
+   - Changed PROCESS_ALL_ACCESS to minimal required rights (less likely
+     to be blocked by anti-cheat/antivirus)
+   - Added runtime admin check with clear error
+   - All output logged to andromeda.logs with timestamps
+   - --debug / -d flag for verbose mode
+   - Better error reporting with GetLastError() hex codes + descriptions
+   - Fixed edge cases in stale process detection
+   - 30s timeout on remote thread instead of indefinite wait
+
+5. DLL INIT — MessageBox error reporting
+   File: DeadLock/DllLauncher.cpp
+   Each init step now shows a popup with a specific error description
+   when it fails (instead of silently exiting).
+
+BUILDS
+  Injector.exe   — 234 KB
+  Andromeda-DeadLock-Base.dll  — ~6.3 MB

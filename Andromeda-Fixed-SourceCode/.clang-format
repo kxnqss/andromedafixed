@@ -1,0 +1,81 @@
+---
+Language:        Cpp
+Standard:        c++20
+
+# ── Based on ──────────────────────────────────────────────────────────────────
+BasedOnStyle:    LLVM
+
+# ── Indentation ───────────────────────────────────────────────────────────────
+IndentWidth:                4
+TabWidth:                   4
+UseTab:                     ForIndentation
+ContinuationIndentWidth:    4
+IndentCaseLabels:           true
+IndentPPDirectives:         AfterHash
+NamespaceIndentation:       None
+LambdaBodyIndentation:      Signature
+
+# ── Braces — Allman style ─────────────────────────────────────────────────────
+BreakBeforeBraces:          Allman
+
+# ── Line length ───────────────────────────────────────────────────────────────
+ColumnLimit:                140
+ReflowComments:             false
+
+# ── Spaces ────────────────────────────────────────────────────────────────────
+SpaceBeforeParens:          ControlStatements
+SpaceAfterCStyleCast:       false
+SpaceBeforeSquareBrackets:  false
+SpacesInSquareBrackets:     false
+SpaceInEmptyBlock:          false
+SpaceInEmptyParentheses:    false
+SpacesBeforeTrailingComments: 2
+SpaceAfterTemplateKeyword:  true
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceAroundPointerQualifiers: Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon:       false
+SpaceBeforeCpp11BracedList: false
+
+# ── Pointers & references ─────────────────────────────────────────────────────
+PointerAlignment:           Left   # T* ptr  T& ref
+ReferenceAlignment:         Left
+
+# ── Short constructs ──────────────────────────────────────────────────────────
+AllowShortFunctionsOnASingleLine:   Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine:       false
+AllowShortCaseLabelsOnASingleLine:  false
+AllowShortBlocksOnASingleLine:      Empty
+AllowShortLambdasOnASingleLine:     Empty
+
+# ── Line breaks ───────────────────────────────────────────────────────────────
+BreakBeforeBinaryOperators:     NonAssignment
+BreakBeforeTernaryOperators:    true
+AlwaysBreakTemplateDeclarations: Yes
+BreakStringLiterals:            false
+BreakAfterAttributes:           Never
+AlwaysBreakAfterReturnType:     None
+AlwaysBreakBeforeMultilineStrings: false
+
+# ── Alignment ─────────────────────────────────────────────────────────────────
+AlignTrailingComments:
+  Kind:           Always
+  OverEmptyLines: 1
+AlignConsecutiveAssignments:    false
+AlignConsecutiveDeclarations:   false
+AlignOperands:                  Align
+AlignEscapedNewlines:           Left
+
+# ── Includes ──────────────────────────────────────────────────────────────────
+SortIncludes:               Never
+IncludeBlocks:              Preserve
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+Cpp11BracedListStyle:       true
+FixNamespaceComments:       true
+RemoveSemicolon:            false
+SeparateDefinitionBlocks:   Leave
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: LogicalBlock
+...

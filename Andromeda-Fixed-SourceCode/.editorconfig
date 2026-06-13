@@ -1,0 +1,72 @@
+root = true
+
+# ── All files ────────────────────────────────────────────────────────────────
+[*]
+charset                  = utf-8
+end_of_line              = lf
+trim_trailing_whitespace = true
+insert_final_newline     = true
+
+# ── C / C++ source ───────────────────────────────────────────────────────────
+[*.{c,cc,cpp,cxx,h,hpp,hxx}]
+indent_style = tab
+indent_size  = 4
+tab_width    = 4
+
+# Visual Studio / clangd
+cpp_indent_braces                                 = false
+cpp_indent_multi_line_relative_to                 = innermost_parenthesis
+cpp_indent_within_parentheses                     = indent
+cpp_new_line_before_open_brace_function           = new_line
+cpp_new_line_before_open_brace_type               = new_line
+cpp_new_line_before_open_brace_block              = new_line
+cpp_new_line_before_open_brace_namespace          = new_line
+cpp_new_line_before_open_brace_lambda             = same_line
+cpp_new_line_scope_braces_on_separate_lines       = false
+cpp_new_line_close_brace_same_line_empty_type     = false
+cpp_new_line_close_brace_same_line_empty_function = false
+cpp_space_before_function_open_parenthesis        = remove
+cpp_space_within_parameter_list_parentheses       = false
+cpp_space_between_empty_parameter_list_parentheses = false
+cpp_space_after_keywords_in_control_flow_statements = true
+cpp_space_within_control_flow_statement_parentheses = true
+cpp_space_before_initializer_list_open_brace      = false
+cpp_space_within_initializer_list_braces          = true
+cpp_space_preserve_in_wrapping_contexts           = false
+cpp_space_before_empty_square_brackets            = false
+cpp_space_between_empty_square_brackets           = false
+cpp_space_before_comma                            = false
+cpp_space_after_comma                             = true
+cpp_space_remove_before_semicolon                 = true
+cpp_space_before_colon_in_base_inheritance        = true
+cpp_space_after_colon_in_base_inheritance         = true
+cpp_space_remove_around_unary_operator            = true
+cpp_space_around_binary_operator                  = insert
+cpp_space_around_assignment_operator              = insert
+cpp_space_pointer_reference_alignment             = left
+cpp_space_around_ternary_operator                 = insert
+cpp_wrap_preserve_blocks                          = one_liners
+
+# ── Protobuf ──────────────────────────────────────────────────────────────────
+[*.proto]
+indent_style = space
+indent_size  = 2
+
+# ── JSON / config ─────────────────────────────────────────────────────────────
+[*.json]
+indent_style = space
+indent_size  = 4
+
+# ── Python scripts (debug tools) ──────────────────────────────────────────────
+[*.py]
+indent_style = space
+indent_size  = 4
+
+# ── CMake / MSBuild ───────────────────────────────────────────────────────────
+[*.{cmake,CMakeLists.txt,vcxproj,vcxproj.filters,props,targets}]
+indent_style = space
+indent_size  = 2
+
+# ── Markdown ──────────────────────────────────────────────────────────────────
+[*.md]
+trim_trailing_whitespace = false

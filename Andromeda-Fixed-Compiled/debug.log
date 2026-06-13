@@ -1,0 +1,49 @@
+[+] StartCheatThread: C:\Users\Anton\Desktop\Andromeda\Andromeda-Fixed-Compiled\
+[+] CBasePattern: CSkeletonInstance::CalcWorldSpaceBones -> 00007FFAAE5A6BF0
+[+] CBasePattern: ScreenTransform -> 00007FFAAE720F80
+[+] CBasePattern: CCitadelInput::GetViewAngles -> 00007FFAAE6A7BB0
+[+] CBasePattern: CGameEntitySystem::GetBaseEntity -> 00007FFAAE504B40
+[+] CBasePattern: CGameEntitySystem::GetLocalCitadelPlayerController -> 00007FFAAE4912D0
+[+] CBasePattern: IGameEvent::GetName -> 00007FFAAE4F5C40
+[+] CBasePattern: GetCUserCmdTick -> 00007FFAAEDD7B40
+[+] CBasePattern: GetCUserCmdArray -> 00007FFAAE46E2B0
+[+] CBasePattern: GetCUserCmdBySequenceNumber -> 00007FFAAE46E0B0
+[+] CBasePattern: C_EnvSky::Update -> 00007FFAADA33AE0
+[+] CBasePattern: C_BaseEntity::GetBoneIdByName -> 00007FFAAE477EB0
+[+] CBasePattern: C_BaseEntity::GetHitBoxSet -> 00007FFAAE46A300
+[+] CBasePattern: CCitadelCameraManager -> 00007FFAB02E15F0
+[+] CBasePattern: C_BaseEntity::ComputeHitboxBounds -> 00007FFAAE45BFD0
+[+] CBasePattern: CMaterialSystem2::CreateMaterial -> 00007FFB31FABFB0
+[+] CBasePattern: KeyValues3::LoadKV3 -> 00007FFB0EA55AB0
+[error] CBasePattern: CAbilityProperty::ComputeValue
+[warn] CFunctionList::OnInit — OPTIONAL FAILED (skipping): CAbilityProperty::ComputeValue
+[+] CBasePattern: CAbilityProperty::ComputeScaled -> 00007FFAAD8DF180
+[+] CBasePattern: QueryEntityStat -> 00007FFAAD8CF400
+[+] CBasePattern: QueryEntityStatVs -> 00007FFAAD8CF250
+[+] CBasePattern: GetAbilityServiceContext -> 00007FFAAFE392C0
+
+[+] CSDK_Loader::LoadSDK:
+
+[+] CBasePattern: CSchemaSystem::GetAllTypeScope -> 00007FFB68386978
+[+] CBasePattern: IVEngineToClient::IsInGame -> 00007FFAD563C990
+[+] CBasePattern: IVEngineToClient::ExecuteClientCmd -> 00007FFAD563C340
+
+[+] pSchemaSystem: 00007FFB683867E0
+[+] pEngineToClient: 00007FFAD5BE0C30
+[+] pGameEntitySystem: 000004CFF806A000
+[+] pGameEntitySystem: 00007FFB716B2B50
+[+] pSoundOpSystem: 00007FFAC8846D50
+[+] pCUserCmdArray: 00007FFAB07E8950
+
+[+] CBasePattern: Hook::PresentOverlay -> 00007FFB50E932F0
+[+] CBasePattern: Hook::FireEventClientSide -> 00007FFAAE4F0710
+[+] CBasePattern: Hook::MouseInputEnabled -> 00007FFAAD5ABBF0
+[+] CBasePattern: Hook::IsRelativeMouseMode -> 00007FFB7167B050
+[+] CBasePattern: Hook::OnAddEntity -> 00007FFAAE505C40
+[+] CBasePattern: Hook::OnRemoveEntity -> 00007FFAAE506440
+[+] CBasePattern: Hook::CreateMove -> 00007FFAAE6A1DC0
+[+] CBasePattern: Hook::ParseMessage -> 00007FFAD55E9030
+[+] CBasePattern: Hook::OnClientOutput -> 00007FFAD57B2270
+[+] CBasePattern: Hook::GetMatricesForView -> 00007FFAAD3E7A60
+[+] CBasePattern: Hook::Draw -> 00007FFAC34F4930
+[panorama] CUIEngine found: panoramauiclient+0x2AB6A8  ptr=000004CFF8691E00
